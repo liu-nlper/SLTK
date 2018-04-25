@@ -1,0 +1,5 @@
+gensim==2.3.0
+numpy==1.13.1
+torch==0.2.0.post3
+torchvision==0.1.9
+tqdm==4.19.4
