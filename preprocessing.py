@@ -93,8 +93,7 @@ def precessing_data(path_data, has_label, features, root_data_idx, feature_dict=
             feature_items.append(line)
             # 记录特征
             items = pattern_feature.split(line)
-            if has_label:
-                update_feature_dict(items, feature_dict, features, has_label=has_label)
+            update_feature_dict(items, feature_dict, features, has_label=has_label)
 
             line = file_data.readline()
             line_idx += 1
