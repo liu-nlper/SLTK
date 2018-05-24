@@ -95,7 +95,7 @@
 
 2. Ma X, and Hovy E. [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P/P16/P16-1101.pdf), ACL, 2016.
 
-## Updating
+## Updating...
 
  - `clip`: RNN层的梯度裁剪；
 
