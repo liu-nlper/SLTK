@@ -76,8 +76,8 @@
 
 注：
 
- - 训练语料下载地址: [CoNLL 2003 NER](https://www.clips.uantwerpen.be/conll2003/ner/)
- - 词向量下载地址: [glove.6B.zip](http://nlp.stanford.edu/data/glove.6B.zip)，词向量需修改为word2vec词向量格式，即`txt`文件的首部需要有`'词表大小 向量维度\n'`信息。
+ - CoNLL 2003语料下载地址: [CoNLL 2003 NER](https://www.clips.uantwerpen.be/conll2003/ner/)
+ - 词向量下载地址: [glove.6B.zip](http://nlp.stanford.edu/data/glove.6B.zip)，词向量需修改为word2vec词向量格式，即`txt`文件的首部需要有`'词表大小 向量维度'`信息。
 
 ## 4. Requirements
 
