@@ -76,4 +76,4 @@ model_params:
 
 word_norm: true  # word normalization
 max_len_limit: 100  # batch的长度上限(非max_len)
-all_in_memory: True  # 数据全部加载到内存
+all_in_memory: true  # 数据全部加载到内存
