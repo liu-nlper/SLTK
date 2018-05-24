@@ -1,6 +1,6 @@
 # SLTK - Sequence Labeling Toolkit
 
-序列化标注工具，基于PyTorch实现BLSTM-CNN-CRF模型。
+序列化标注工具，基于PyTorch实现BLSTM-CNN-CRF模型，CoNLL 2003 NER测试集F1值为91.08%（word and char feature）。
 
 ## 1. 快速开始
 
