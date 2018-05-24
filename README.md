@@ -1,6 +1,6 @@
 # SLTK - Sequence Labeling Toolkit
 
-序列化标注工具，基于PyTorch实现BLSTM-CNN-CRF模型，CoNLL 2003 NER测试集F1值为91.08%（word and char feature）。
+序列化标注工具，基于PyTorch实现BLSTM-CNN-CRF模型，CoNLL 2003 NER测试集F1值为91.10%（word and char feature）。
 
 ## 1. 快速开始
 
@@ -72,7 +72,7 @@
 | BGRU | 85.50 | 85.89 | 85.69 |
 | BLSTM | 88.05 | 87.19 | 87.62 |
 | BLSTM-CNN | 89.21 | 90.48 | 89.84 |
-| BLSTM-CNN-CRF | 90.98 | 91.19 | 91.08 |
+| BLSTM-CNN-CRF | 91.01 | 91.19 | 91.10 |
 
 注：
 
