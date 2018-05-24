@@ -1,0 +1,5 @@
+gensim
+h5py
+numpy
+torch==0.4.0
+pyyaml

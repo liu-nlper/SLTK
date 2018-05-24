@@ -1,0 +1,79 @@
+model: NER
+
+# 注: 所有路径都需以项目为根目录写起.
+# 特征包括:
+# 1. word特征
+# 2. pos特征
+# 3. chunk特征
+
+# 路径相关参数
+data_params:
+
+  # 训练、开发、测试数据路径
+  path_train: ./data/train.bieso.txt
+  path_dev: ./data/valid.bieso.txt
+  path_test: ./data/test.bieso.txt
+  path_test_result: ./data/test.bieso.txt.output  # default is path_test+'.output'
+
+  # 定义特征列数, 以及特征别名
+  feature_cols: [0, 1, 2]
+  feature_names: [word, pos, chunk]  # feature alias
+
+  # alphabet参数及存放路径
+  alphabet_params:
+    min_counts: [0, 0, 0]
+    path: ./data/alphabet/  # 特征字典存放根目录
+
+  # 预训练特征向量路径, 按feature_names顺序设置, 没有预训练向量则设为null
+  path_pretrain:
+    - ./data/resources/glove.6B.100d.bin  # 格式为bin或txt
+    - null
+    - null
+
+  # 模型存放路径
+  path_model: ./data/models/ner_model
+
+
+# 模型参数
+model_params:
+
+  # embedding parameters, 若提供了path_pretrain参数, 则以该参数为准
+  embed_sizes: [100, 20, 20]
+  require_grads: [true, true, true]
+
+  # char parameters
+  use_char: true
+  char_dim: 30
+  char_requires_grad: true
+  char_max_len: 20  # 单词最大长度
+  conv_filter_sizes: [3]
+  conv_filter_nums: [30]
+
+  # rnn parameters
+  rnn_type: lstm  # `rnn`, `lstm` or `gru`
+  rnn_layers: 1
+  rnn_units: 100
+  bi_flag: true
+
+  use_crf: true
+
+  # train parameters
+  dev_size: 0.1  # 若没有`path_dev`参数, 则根据该值划分训练集
+  batch_size: 10
+  dropout_rate: 0.5
+  learning_rate: 0.015
+  optimizer: sgd  # sgd, adam, adadelta, ...
+  l2_rate: 1.0e-8
+  lr_decay: 0.05  # only for sgd optimizer
+  momentum: 0.
+  clip: 5  # TODO grad clip
+  max_patience: 5
+  nb_epoch: 1000
+  average_batch: false
+
+  use_cuda: true
+  deterministic: false
+
+word_norm: true  # word normalization
+max_len_limit: 100  # batch的长度上限(非max_len)
+all_in_memory: True  # 数据全部加载到内存
