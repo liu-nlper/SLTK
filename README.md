@@ -91,9 +91,9 @@
 
 ## 5. 参考
 
-1. Lample G, Ballesteros M, et al. [Neural Architectures for Named Entity Recognition](http://www.aclweb.org/anthology/N/N16/N16-1030.pdf), NANCL, 2016.
+1. Lample G, Ballesteros M, et al. [Neural Architectures for Named Entity Recognition](http://www.aclweb.org/anthology/N/N16/N16-1030.pdf). NANCL, 2016.
 
-2. Ma X, and Hovy E. [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P/P16/P16-1101.pdf), ACL, 2016.
+2. Ma X, and Hovy E. [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P/P16/P16-1101.pdf). ACL, 2016.
 
 ## Updating...
 
