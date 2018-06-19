@@ -7,7 +7,7 @@
 ### 1.1 安装依赖项
 
     $ sudo pip3 install -r requirements.txt --upgrade  # for all user
-    $ sudo pip3 install -r requirements.txt --upgrade --user  # for current user
+    $ pip3 install -r requirements.txt --upgrade --user  # for current user
 
 ### 1.2 预处理&训练
 
