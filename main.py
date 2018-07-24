@@ -568,7 +568,7 @@ def test_model(configs):
 
 def main():
     opts = parse_opts()
-    configs = yaml.load(codecs.open(opts.config))
+    configs = yaml.load(codecs.open(opts.config, encoding='utf-8'))
 
     if opts.train:  # train
         # 判断是否需要预处理
